@@ -24,6 +24,8 @@ A presente página cobre os seguintes tópicos:
   - [o que será desenvolvido?](#o-que-será-desenvolvido)
   - [proposta do projeto](#proposta-do-projeto)
 - [etapas da atividade](#etapas-da-atividade)
+- [planejamento do projeto](#planejamento-do-projeto)
+  - [atendendo aos requisitos](#atendendo-aos-requisitos)
 
 ## Contextualização da atividade
 
@@ -105,3 +107,20 @@ seguintes etapas:
 3. **testes e refinamento:** testes unitários e de integração, bem como correção de falhas;
 4. **documentação e preparação para apresentação:** elaboração do relatório técnico e dos materiais
    para a apresentação final documentada do projeto.
+
+## Planejamento do projeto
+
+O documento orientador carrega também uma seção entitulada como `Projeto do Sistema e Segurança da
+Informação`. Esta mesma seção aborda os tópicos **modelagem** e **planejamento**.
+
+### Atendendo aos requisitos
+
+Como mencionado em tópicos anteriores, o sistema deve propor um _backend_ para lidar com manuseio
+de _input_/_output_ + integração a um banco de dados, além de uma interface visual para consumir o
+serviço, sendo essa por sua vez, **JSP**.
+
+Tendo esses requisitos em mente, podemos facilmente atendê-los por meio de um sistema baseado em
+**MVC** e/ou **REST**.
+
+O documento também sugere escolhar um único tipo de mídia (livro, filme ou série) para seguir o
+projeto, a fim de tornar mais previsível a implementação. O tipo de mídia escolhido será **livro**!
