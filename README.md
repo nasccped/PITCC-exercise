@@ -21,6 +21,7 @@ Considere utilizar o [sumário](#sumário) para navegar pela página!
 A presente página cobre os seguintes tópicos:
 
 - [contextualização da atividade](#contextualização-da-atividade)
+  - [o que será desenvolvido?](#o-que-será-desenvolvido)
 
 ## Contextualização da atividade
 
@@ -45,3 +46,15 @@ pois, de acordo com os próprios documentos:
 > - Colaborativa;
 > - Autônoma e responsável;
 > - Reflexiva.
+
+### O que será desenvolvido?
+
+A atividade se baseia no desenvolvimento de um projeto com o intuíto de promover a aplicação dos
+seguintes conhecimentos:
+- linguagem de programação `Java`;
+- paradigma de programação **orientado a objetos**.
+
+Outras observações concedidas:
+- desenvolvimento de um projeto computacional simples e factível;
+- útil e ao mesmo tempo interessante;
+- com potencial de uso pessoal ou por outras pessoas.
