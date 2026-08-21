@@ -22,6 +22,7 @@ A presente página cobre os seguintes tópicos:
 
 - [contextualização da atividade](#contextualização-da-atividade)
   - [o que será desenvolvido?](#o-que-será-desenvolvido)
+  - [proposta do projeto](#proposta-do-projeto)
 
 ## Contextualização da atividade
 
@@ -58,3 +59,36 @@ Outras observações concedidas:
 - desenvolvimento de um projeto computacional simples e factível;
 - útil e ao mesmo tempo interessante;
 - com potencial de uso pessoal ou por outras pessoas.
+
+### Proposta do projeto
+
+O projeto a ser desenvolvido se baseia em uma aplicação web que permita ao(à) usuário(a) catalogar
+e consultar informações sobre livros, séries ou filmes. Cada item deve conter atributos mínimos,
+como título, autor/diretor, ano de publicação/lançamento, gênero e uma breve sinopse.
+
+É informado também que o sistema deve atender os seguintes requisitos:
+- interface web para navegação e gerenciamento;
+- cadastro de novos livros/filmes;
+- listagem de todos os itens catalogados;
+- visualização dos detalhes de um item específico;
+- opção de editar as informações de um item;
+- opção de excluir um item do catálogo;
+- busca simples por título ou autor/diretor;
+- persistência dos dados em banco de dados.
+
+De acordo com os textos de orientação, após o desenvolvimento, terão sido trabalhadas as seguintes
+competências:
+- modelagem da entidade `Livro` ou `Filme`;
+- implementação de **CRUD** (_Create_, _Read_, _Update_, _Delete_);
+- desenvolvimento de **JSP**s para exibição de lista, detalhes e formulários;
+- implementação de uma funcionalidade de busca básica usando **SQL**.
+
+Outras observações dispostas pelos documentos:
+1. Sua complexidade de desenvolvimento é muito baixa e envolve uma entidade principal com
+   atributos claros;
+2. A funcionalidade de busca simples adiciona um pequeno desafio interessante voltada para o SQL;
+3. Possíveis extensões _(não obrigatório)_:
+   - Adicionar um sistema de avaliação (use estrelas ou emoji que desejar);
+   - Permitir o upload de uma imagem de capa;
+   - Filtragem por gênero (romance, drama, comédia, ficção, ação, aventura, documentário etc.).
+4. É fundamental que o escopo do projeto seja gerenciável dentro do cronograma semestral.
