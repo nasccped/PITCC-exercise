@@ -23,6 +23,7 @@ A presente página cobre os seguintes tópicos:
 - [contextualização da atividade](#contextualização-da-atividade)
   - [o que será desenvolvido?](#o-que-será-desenvolvido)
   - [proposta do projeto](#proposta-do-projeto)
+- [etapas da atividade](#etapas-da-atividade)
 
 ## Contextualização da atividade
 
@@ -92,3 +93,15 @@ Outras observações dispostas pelos documentos:
    - Permitir o upload de uma imagem de capa;
    - Filtragem por gênero (romance, drama, comédia, ficção, ação, aventura, documentário etc.).
 4. É fundamental que o escopo do projeto seja gerenciável dentro do cronograma semestral.
+
+## Etapas da atividade
+
+Os documentos de instrução informam que o desenvolvimento da atividade pode ser separado nas
+seguintes etapas:
+1. **concepção e planejamento:** definição detalhada do escopo, levantamento de requisitos,
+   modelagem inicial do sistema (casos de uso, diagramas de classes simplificados, modelo de dados)
+   e planejamento das entregas;
+2. **desenvolvimento (iterativo):** implementação dos módulos do sistema;
+3. **testes e refinamento:** testes unitários e de integração, bem como correção de falhas;
+4. **documentação e preparação para apresentação:** elaboração do relatório técnico e dos materiais
+   para a apresentação final documentada do projeto.
