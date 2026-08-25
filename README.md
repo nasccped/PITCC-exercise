@@ -26,6 +26,7 @@ A presente página cobre os seguintes tópicos:
 - [etapas da atividade](#etapas-da-atividade)
 - [planejamento do projeto](#planejamento-do-projeto)
   - [atendendo aos requisitos](#atendendo-aos-requisitos)
+    - [diagrama de casos de uso](#diagrama-de-casos-de-uso)
 
 ## Contextualização da atividade
 
@@ -124,3 +125,35 @@ Tendo esses requisitos em mente, podemos facilmente atendê-los por meio de um s
 
 O documento também sugere escolhar um único tipo de mídia (livro, filme ou série) para seguir o
 projeto, a fim de tornar mais previsível a implementação. O tipo de mídia escolhido será **livro**!
+
+#### Diagrama de casos de uso
+
+Para identificar os atores e as principais interações que eles terão com o sistema, foi montado o
+seguinte diagrama de casos de uso:
+
+<div align="center">
+
+![diagrama de casos de uso](./images/usecase-diagram.svg)
+
+_diagrama de casos de uso_
+
+</div>
+
+No diagrama apresentado, temos um único ator, sendo ele o `user` (usuário). O usuário é aquele
+quem, direta ou indiretamente, interage com o sistema. No diagrama também é possível observar os
+limites do sistema (bloco azul entitulado por `System's Interface`) onde ficam de fato armazenados
+os casos de uso:
+
+- `Add`, `Update`, `Remove`, `Show` correspondem aos requisitos de _CRUD_ do sistema;
+- `Search` e `List` são casos de uso que correspondem ao requisito de busca e listagem mencionados
+  nas etapas iniciais do desenvolvimento do projeto.
+
+> [!NOTE]
+>
+> 1. Perceba que o usuário não tem acesso nem ao caso de uso fundamental de listagem, nem ao caso
+>    de uso fundamental de busca. Esses casos de uso são na verdade inclusos dentro de outros casos
+>    de uso de acesso público. No fim, todos eles convergem para `List Books` já que listando ou
+>    buscando, as informações retornadas **sempre** irão corresponder à uma sequência de items;
+> 2. No diagrama é exposto apenas o bloco de `System's Interface` já que toda a operação de _CRUD_
+>    é realizada por meio de uma interface visual. Um grupo de _backend_ e _database_ pode ser
+>    adicionado nas futuras iterações/entregas de documentos.
