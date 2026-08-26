@@ -27,6 +27,7 @@ A presente página cobre os seguintes tópicos:
 - [planejamento do projeto](#planejamento-do-projeto)
   - [atendendo aos requisitos](#atendendo-aos-requisitos)
     - [diagrama de casos de uso](#diagrama-de-casos-de-uso)
+    - [diagrama de classes (livro)](#diagrama-de-classes-livro)
 
 ## Contextualização da atividade
 
@@ -157,3 +158,33 @@ os casos de uso:
 > 2. No diagrama é exposto apenas o bloco de `System's Interface` já que toda a operação de _CRUD_
 >    é realizada por meio de uma interface visual. Um grupo de _backend_ e _database_ pode ser
 >    adicionado nas futuras iterações/entregas de documentos.
+
+#### Diagrama de classes (livro)
+
+Considerando que **livro** corresponde ao domínio central da aplicação, podemos apresentar o
+seguinte diagrama de classes:
+
+<div align="center">
+
+![diagrama de classes (livro)](./images/book-class-diagram.svg)
+
+_diagrama de classes (livro)_
+
+</div>
+
+O livro é composto pelos seguintes campos:
+- `id: UUID` referindo-se ao identificador único do livro (usado pelo banco de dados como _primary
+   key_);
+- `title: String` referindo-se ao título do livro;
+- `author: String` referindo-se ao autor do livro;
+- `category: BookCategory` referindo-se à categoria (ou gênero) do livro;
+- `releaseYear: Integer` referindo-se ao ano de lançamento do livro.
+
+Além de disponibilizar os _getters_ para acesso das informações internas, há também um componente
+chamado `BookCategory` (funcionando de maneira similar a um **enumerador**). Este componente tem
+como função também ser armazenado no banco de dados e se relacionar com a entidade `books`. Essa
+etapa será melhor descrita na seção de **modelagem de banco de dados** (dê uma olhada no
+[sumário](#sumário)).
+
+O relacionamento entre `Book` e `BookCategory` ocorre em **1 para muitos**, já que o livro está
+associado com uma única categoria, mas uma categoria pode se relacionar com muitos livros.
