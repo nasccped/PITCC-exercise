@@ -27,10 +27,12 @@ public class BookController {
     }
 
     /**
-     * Controller for book specific data showing. It locates at "/books/{id}" endpoint and refers
+     * Controller for book specific data showing. It locates at "/books/{id}"
+     * endpoint and refers
      * to a single book data (which is associated with that id).
      *
-     * TODO: fallback to error page when provided id isn't valid UUID. */
+     * TODO: fallback to error page when provided id isn't valid UUID.
+     */
     @GetMapping("/{id}")
     public String bookById(Model model, @PathVariable UUID id) {
         // add id info to model when rendering.
