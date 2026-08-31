@@ -10,20 +10,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /* Book resource controller. */
 @Controller
-@RequestMapping("/book")
+@RequestMapping("/books")
 public class BookController {
 
     /**
      * Default controller for "/book" endpoint. Just return the book listing. */
     @GetMapping
-    public String book() {
+    public String books() {
         // TODO: add  service logic (connecting / data fetching).
         return "book-listing-page";
     }
 
     /**
-     * Controller for book specific data showing. It locates at "/book/{id}" endpoint and refers to
-     * a single book data (which is associated with that id).
+     * Controller for book specific data showing. It locates at "/books/{id}" endpoint and refers
+     * to a single book data (which is associated with that id).
      *
      * TODO: fallback to error page when provided id isn't valid UUID. */
     @GetMapping("/{id}")
