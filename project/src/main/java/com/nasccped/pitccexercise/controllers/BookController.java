@@ -8,16 +8,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.nasccped.pitccexercise.models.jspmodels.JspBook;
+
 /* Book resource controller. */
 @Controller
 @RequestMapping("/books")
 public class BookController {
 
     /**
-     * Default controller for "/book" endpoint. Just return the book listing. */
+     * Default controller for "/book" endpoint. Just return the book listing.
+     */
     @GetMapping
-    public String books() {
-        // TODO: add  service logic (connecting / data fetching).
+    public String books(Model model) {
+        // HACK: add service logic (connecting / data fetching). The line bellow just
+        // fetch raw info from hardcoded stuff (display test related).
+        model.addAttribute("books", JspBook.getPlaceholderBooks());
         return "book-listing-page";
     }
 
