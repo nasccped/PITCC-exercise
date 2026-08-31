@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Livro (${id})</title>
+    <title>PITCC - livro (${id})</title>
 </head>
 <body>
     <h1 align="center">Acessando informações do livro de ID (${id})</h1>

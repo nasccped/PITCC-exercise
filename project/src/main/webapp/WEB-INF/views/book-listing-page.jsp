@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Listagem de livros</title>
+    <title>PITCC - lista</title>
 </head>
 <body>
     <h1 align="center">Livros disponíveis no sistema</h1>
